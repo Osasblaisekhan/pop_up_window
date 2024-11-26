@@ -1,0 +1,83 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: blue;
+}
+.touch_me{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 10px;
+    color: #000;
+    font-weight: 900;
+    font-size: 1rem;
+}
+.my_container{
+    visibility: hidden;
+    pointer-events: none;
+    width: 300px;
+    height: 300px;
+    border: 2px solid;
+    border-radius: 10px;
+    border-color: whitesmoke;
+    
+}
+.my_container h1{
+    color: #000;
+    font-weight: 700;
+    font-size: 1.5rem;
+    text-align: center;
+    text-transform: capitalize;
+
+}
+.my_container p{
+    color: #000;
+    font-weight: 900;
+    font-size: 1.2rem;
+    text-align: center;
+    text-transform: capitalize;
+    color: pink;
+}
+    .my_container.active{
+        visibility: visible;
+        width: 300px;
+        height: 300px;
+        border: 2px solid;
+        border-radius: 10px;
+        border-color: whitesmoke;
+        animation-name: slideup;
+        animation-duration: 4s;
+        animation-name: slidedown;
+    } 
+    
+.my_container.active h1{
+    color: #000;
+    font-weight: 700;
+    font-size: 1.5rem;
+    text-align: center;
+    text-transform: capitalize;
+
+}
+.my_container.active p{
+    color: #000;
+    font-weight: 900;
+    font-size: 1.2rem;
+    text-align: center;
+    text-transform: capitalize;
+    color: pink;
+}
+.btn{
+    width: 100px;
+    height: 40px;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: 700;
+    color: #fff;
+    background-color: green;
+}
+@keyframes slidedown {
+    from{transform: translateY(100px)}
+}
